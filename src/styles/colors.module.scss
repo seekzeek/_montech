@@ -1,0 +1,23 @@
+$primary-color: #ffffff;
+$secondary-color: #1e1a2f;
+$accent-color: #14f195;
+$green-color: #34d399;
+$grey-1: #d6d5d9;
+$grey-2: #9d9d9d;
+$grey-3: #3d3b4f;
+$grey-4: #e1e1e1;
+
+$bg-color: #1b182b;
+
+:export {
+  primary: $primary-color;
+  accent: $accent-color;
+  secondary: $secondary-color;
+  green: $green-color;
+  grey1: $grey-1;
+  grey2: $grey-2;
+  grey3: $grey-3;
+  grey4: $grey-4;
+
+  bgColor: $bg-color;
+}

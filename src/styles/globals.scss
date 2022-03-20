@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./colors.module.scss";
+
+@layer base {
+  :root {
+    --bg-color: 27, 24, 43;
+    --secondary-color: 30, 26, 47;
+    --primary-color: 255, 255, 255;
+    --accent-color: 20, 241, 149;
+    --green-color: 52, 211, 153;
+    --grey-1: 214, 213, 217;
+    --grey-2: 157, 157, 157;
+    --grey-3: 61, 59, 79;
+    --grey-4: 225, 225, 225;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $bg-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-drop-sh {
+  filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+}
+
+.bg-image {
+  background: url("../../public/assets/images/bg-image.svg") no-repeat;
+  background-size: auto;
+  background-position: left top;
+}
+
+.bg-img-nft {
+  background: url("../../public/assets/images/bg-img-nft.svg") no-repeat;
+  background-size: auto;
+  background-position: top top;
+}
+
+@media screen and (min-width: 1546px) {
+  .container-fluid {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .bg-img-nft {
+    background-size: cover;
+  }
+}
+
+// utils
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+}
